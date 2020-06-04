@@ -20,6 +20,35 @@ import utils.ArrayUtil;
  * @Version 1.0
  */
 public class Solution01 {
+    /**
+     * 时间复杂度O(n) 空间复杂度常数（返回值本身不算复杂度）
+     * @param nums
+     * @return
+     */
+    public int[] productExceptSelf1(int[] nums) {
+        if(null == nums || nums.length == 0) {
+            return new int[]{};
+        }
+        int length = nums.length;
+        int[] ans = new int[length];
+        ans[0] = 1;
+        for (int i = 1; i < length; i++) {
+            ans[i] = ans[i-1] * nums[i-1];
+        }
+        int r = 1;
+        for (int i = length-1; i >= 0; i--) {
+            ans[i] = ans[i] * r;
+            r = r*nums[i];
+        }
+        return ans;
+    }
+
+
+    /**
+     * 时间复杂度 O(n) 空间复杂度O(n)
+     * @param nums
+     * @return
+     */
     public int[] productExceptSelf(int[] nums) {
         if(null == nums || nums.length == 0)
             return new int[]{};
