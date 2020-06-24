@@ -1,4 +1,4 @@
-package leetcode.aboutstring.addbinary;
+package pers.leetcode.aboutstring.addbinary;
 
 import java.math.BigDecimal;
 

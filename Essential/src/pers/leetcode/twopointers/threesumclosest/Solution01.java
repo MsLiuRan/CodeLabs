@@ -1,4 +1,4 @@
-package leetcode.twopointers.threesumclosest;
+package pers.leetcode.twopointers.threesumclosest;
 
 /**
  * @ClassName Solution01

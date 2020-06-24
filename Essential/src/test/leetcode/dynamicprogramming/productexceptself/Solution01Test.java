@@ -2,6 +2,7 @@ package leetcode.dynamicprogramming.productexceptself;
 
 import org.junit.Assert;
 import org.junit.Test;
+import pers.leetcode.dynamicprogramming.productexceptself.Solution01;
 
 import static org.junit.Assert.*;
 

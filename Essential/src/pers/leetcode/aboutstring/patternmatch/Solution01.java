@@ -1,4 +1,4 @@
-package leetcode.aboutstring.patternmatch;
+package pers.leetcode.aboutstring.patternmatch;
 
 /**
  * @ClassName Solution01

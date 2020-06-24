@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.houserobber;
+package pers.leetcode.dynamicprogramming.houserobber;
 
 /**
  * @ClassName Solution2

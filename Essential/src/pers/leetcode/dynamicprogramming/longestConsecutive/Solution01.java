@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.longestConsecutive;
+package pers.leetcode.dynamicprogramming.longestConsecutive;
 
 import utils.ArrayUtil;
 

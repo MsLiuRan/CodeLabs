@@ -1,4 +1,4 @@
-package leetcode.dynamicprogramming.productexceptself;
+package pers.leetcode.dynamicprogramming.productexceptself;
 
 import utils.ArrayUtil;
 

@@ -2,6 +2,7 @@ package leetcode.aboutstring.addbinary;
 
 import org.junit.Assert;
 import org.junit.Test;
+import pers.leetcode.aboutstring.addbinary.Solution03;
 
 import static org.junit.Assert.*;
 

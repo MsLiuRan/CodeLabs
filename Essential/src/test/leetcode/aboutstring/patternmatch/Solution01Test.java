@@ -2,6 +2,7 @@ package leetcode.aboutstring.patternmatch;
 
 import org.junit.Assert;
 import org.junit.Test;
+import pers.leetcode.aboutstring.patternmatch.Solution01;
 
 import static org.junit.Assert.*;
 

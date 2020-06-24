@@ -1,4 +1,4 @@
-package utils;
+package pers.utils;
 
 /**
  * @ClassName ArrayUtil
