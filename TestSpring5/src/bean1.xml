@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--1.配置User类对象的创建-->
 <!--    <bean id="user" class="pers.spring5.User"></bean>-->
@@ -13,5 +14,26 @@
         -->
         <property name="bname" value="易筋经"></property>
         <property name="bauthor" value="达摩"></property>
+        <!--null值-->
+<!--        <property name="address">-->
+<!--            <null/>-->
+<!--        </property>-->
+        <!--属性值包含特殊符号
+            1. 把<>进行转义 &lt; &gt;
+            2. 把带特殊符号内容写到CDATA
+        -->
+        <property name="address">
+            <value><![CDATA[<<南京>]]></value>
+        </property>
     </bean>
+
+
+    <!--3 有参构造注入属性-->
+    <bean id="orders" class="pers.spring5.Order">
+        <constructor-arg name="oname" value="电脑"></constructor-arg>
+        <constructor-arg name="address" value="China"></constructor-arg>
+    </bean>
+
+<!--    <bean id="book" class="pers.spring5.Book" p:bname="九阳神功" p:bauthor="无名氏">-->
+<!--    </bean>-->
 </beans>

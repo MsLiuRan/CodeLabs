@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1.service和dao对象创建-->
+    <bean id="userService" class="pers.spring5.service.UserService">
+        <!--注入userDao对象 name属性值：类里面属性名称-->
+        <property name="userDao" ref="userDaoImpl"></property>
+    </bean>
+    <!--接口不能创建对象，需要用实现类-->
+    <bean id="userDaoImpl" class="pers.spring5.dao.UserDaoImpl"></bean>
+    <!--2.set方法注入属性-->
+</beans>
