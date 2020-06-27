@@ -1,6 +1,6 @@
 package pers.leetcode.dynamicprogramming.longestConsecutive;
 
-import utils.ArrayUtil;
+import pers.utils.ArrayUtil;
 
 import java.util.Arrays;
 

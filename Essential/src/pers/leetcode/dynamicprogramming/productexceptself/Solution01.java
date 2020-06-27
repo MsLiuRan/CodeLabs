@@ -1,6 +1,6 @@
 package pers.leetcode.dynamicprogramming.productexceptself;
 
-import utils.ArrayUtil;
+import pers.utils.ArrayUtil;
 
 /**
  * @ClassName Solution01 238. 除自身以外数组的乘积
