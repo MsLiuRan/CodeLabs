@@ -14,8 +14,4 @@ package pers.leetcode.problem2;
  * @Version 1.0
  */
 public class Solution01 {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-
-    }
 }
