@@ -11,7 +11,7 @@
     <!--数据库连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-        <property name="url" value="jdbc:mysql://localhost:3306/user_db1?characterEncoding=utf8"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/user_db?characterEncoding=utf8"></property>
         <property name="username" value="root"></property>
         <property name="password" value="root"></property>
     </bean>

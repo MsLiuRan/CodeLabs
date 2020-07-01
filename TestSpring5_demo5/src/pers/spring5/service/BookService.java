@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import pers.spring5.dao.BookDao;
 import pers.spring5.entity.Book;
 
+import java.util.List;
+
 /**
  * @ClassName BookService
  * @Description //TODO
@@ -22,4 +24,32 @@ public class BookService {
     public void addBook(Book book) {
         bookDao.add(book);
     }
+    //修改方法
+    public void updateBook(Book book) {
+        bookDao.update(book);
+    }
+    //删除方法
+    public void deleteBook(String id) {
+        bookDao.delete(id);
+    }
+    public int findCount() {
+        return bookDao.selectCount();
+    }
+    public Book findOne(String id) {
+        return bookDao.findBookInfo(id);
+    }
+    public List<Book> findAll() {
+        return bookDao.findBookAll();
+    }
+    public void batchAdd(List<Object[]> batchArgs) {
+        bookDao.batchAdd(batchArgs);
+    }
+    public void batchUpdateBook(List<Object[]> batchArgs) {
+        bookDao.batchUpdate(batchArgs);
+    }
+    //批量删除
+    public void batchDelete(List<Object[]> batchArgs) {
+        bookDao.batchDelete(batchArgs);
+    }
+
 }
