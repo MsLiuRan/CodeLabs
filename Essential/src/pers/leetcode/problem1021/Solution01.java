@@ -1,6 +1,8 @@
 package pers.leetcode.problem1021;
 
 
+import java.util.Stack;
+
 /**
  * @ClassName Solution01 1021.删除最外层的括号
  * @Description 有效括号字符串为空 ("")、"(" + A + ")" 或 A + B，
@@ -19,6 +21,31 @@ package pers.leetcode.problem1021;
  */
 public class Solution01 {
     public String removeOuterParentheses(String S) {
-        return "";
+        StringBuilder ans = new StringBuilder();
+        Stack<Character> stack = new Stack<Character>();
+        int start = 0;
+        int end = 0;
+        boolean flag = false;
+        for (int i = 0; i < S.length(); i++) {
+            char ch = S.charAt(i);
+            if (ch == '(') {
+                //遇到左括号
+                stack.push(ch);
+                if (!flag) {
+                    start = i;
+                    flag = true;
+                }
+            }
+            if (ch == ')') {
+                stack.pop();
+                if (stack.isEmpty()) {
+                    end = i;
+                    ans.append(S.substring(start+1,end));
+                    flag = false;
+                    start = end;
+                }
+            }
+        }
+        return ans.toString();
     }
 }
