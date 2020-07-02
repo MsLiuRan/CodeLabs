@@ -15,7 +15,7 @@ import pers.spring5.dao.UserDao;
  * @Version 1.0
  */
 @Service
-@Transactional(timeout = -1,propagation = Propagation.REQUIRED,isolation = Isolation.REPEATABLE_READ) //(可以加在service类上面也可以加在service类里面的方法上面)
+@Transactional(timeout = -1,propagation = Propagation.REQUIRED) //(可以加在service类上面也可以加在service类里面的方法上面)
 public class UserService {
     //注入dao
     @Autowired

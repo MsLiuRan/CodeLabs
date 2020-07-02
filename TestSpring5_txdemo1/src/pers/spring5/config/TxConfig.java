@@ -17,9 +17,9 @@ import javax.sql.DataSource;
  * @Date 2020/7/2 21:17
  * @Version 1.0
  */
-@Configuration //配置类
-@ComponentScan(basePackages = "pers.spring5") //开启组件扫描
-@EnableTransactionManagement //开启事务
+//@Configuration //配置类
+//@ComponentScan(basePackages = "pers.spring5") //开启组件扫描
+//@EnableTransactionManagement //开启事务
 public class TxConfig {
     //创建数据库连接池
     @Bean
