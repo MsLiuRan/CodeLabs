@@ -29,7 +29,7 @@ public class MyQueue {
             temp.push(stack.pop());
         }
         int pop = stack.pop();
-        for (int i = 0; i < temp.size(); i++) {
+        for (int i = 0; i <= temp.size(); i++) {
             stack.push(temp.pop());
         }
         return pop;
@@ -41,20 +41,5 @@ public class MyQueue {
 
     public boolean empty() {
         return stack.isEmpty();
-    }
-
-    public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<Integer>();
-        System.out.println(stack.size());
-        stack.push(1);
-        System.out.println(stack.size());
-//        MyQueue queue = new MyQueue();
-//        queue.push(1);
-//        queue.push(2);
-//        queue.push(3);
-//        System.out.println(queue.pop());
-//        System.out.println(queue.pop());
-//        System.out.println(queue.pop());
-//        System.out.println(queue.empty());
     }
 }
